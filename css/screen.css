@@ -2,6 +2,23 @@
   #FONTS
 \*------------------------------------*/
 
+@font-face{
+    font-family: "HK Grotesk Web";
+    font-weight: 200;
+    src: url("/fonts/hkgrotesk-light-webfront.woff2") format("woff2"), url("http://fonts/hkgrotesk-light-webfront.woff") format("woff");
+}
+
+@font-face{
+    font-family: "HK Grotesk Web";
+    font-weight: 400;
+    src: url("/fonts/hkgrotesk-regular-webfront.woff2") format("woff2"), url("http://fonts/hkgrotesk-regular-webfront.woff") format("woff");
+}
+
+@font-face{
+    font-family: HK Grotesk Web;
+    font-weight: 600;
+    src: url("/fonts/hkgrotesk-medium-webfront.woff2") format("woff2"), url("http://fonts/hkgrotesk-medium-webfront.woff") format("woff");
+}
 /*------------------------------------*\
   #GENERIC
 \*------------------------------------*/
@@ -15,8 +32,8 @@
 html {
     font-size: 16px;
     line-height: 1.5;
-    font-family: Helvetica, arial, sans-serif;
-    color: #111;
+    font-family: "HK Grotesk Web",Helvetica, arial, sans-serif;
+    color: #202024;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -28,6 +45,13 @@ html {
     box-sizing: inherit;
 }
 
+@media (min-width: 768px){
+    html{
+        font-size: 20px;
+        line-height: 1.6;
+    }
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -36,7 +60,7 @@ html {
  */
 
 ::selection {
-    background: #e85e00;
+    background: #5051DB;
     color: white;
     text-shadow: none;
 }
@@ -64,18 +88,21 @@ img {
 
 h1 {
     font-size: 36px;
+    font-weight: 200;
     line-height: 48px;
     margin: 0 0 24px;
 }
 
 h2 {
     font-size: 32px;
+    font-weight: 200;
     line-height: 40px;
     margin: 0 0 24px;
 }
 
 h3 {
     font-size: 26px;
+    font-weight: 200;
     line-height: 32px;
     margin: 0 0 24px;
 }
@@ -136,19 +163,20 @@ hr {
 }
 
 a {
-    color: RoyalBlue;
+    color: #5051DB;
     transition: all .1s ease-in-out;
 }
 
 a:visited,
 a:active {
-    color: BlueViolet;
+    color: #3E3EA8;  
 }
 
 a:hover,
 a:focus {
-    color: Crimson;
+    color: #3E3EA8;
 }
+
 
 /*------------------------------------*\
   #OBJECTS
@@ -194,7 +222,7 @@ a:focus {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    max-width: 90em; /* 90 * 16px = 1440px */
+    max-width: 70.5em; /* 70.5 * 16px = 1128px */
 }
 
 /*
